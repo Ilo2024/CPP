@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int status;
+    int statuss;
+
+    int bilMil = 1487;
+    float bilLiter = 1235.5;
+    float BilBruk = 0.83;
+
+    cout << "Vad är bilens milantal idag?: ";
+    cin >> status;
+    cout << "Dagens milantal är " << status << " mil" << endl;
+    cout << "Vad är bilens milantal för ett år sedan?: ";
+    cin >> statuss;
+    cout << "Mil för ett år sen: " << statuss << " mil" << endl;
+
+    return 0;
+}
