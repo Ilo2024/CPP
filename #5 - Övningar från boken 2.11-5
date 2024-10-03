@@ -27,8 +27,8 @@ int main()
 
     cout <<""<<endl;
 
-    cout << "Bästa löppare i lopp ett har tiden: "<< tt <<"."<< mm << "." << ss <<endl;
-    cout << "Bästa löppare i lopp två har tiden: "<< tt2 <<"."<< mm2 << "." << ss2 <<endl;
+    cout << "Bästa löppare i lopp ett har tiden: "<< tt <<" timmar "<< mm << " minuter " << ss << " sekunder "<< "(" << tt << "." << mm <<"."<< ss << ")" <<endl;
+    cout << "Bästa löppare i lopp två har tiden: "<< tt2 <<" timmar "<< mm2 << " minuter " << ss2 << " sekunder "<< "(" << tt2 << "." << mm2 <<"."<< ss2 << ")" <<endl;
 
     cout <<""<<endl;
 
@@ -36,10 +36,10 @@ int main()
     lopp2 = tt2 * 3600 + mm2 * 60 + ss2;
 
     if (lopp1 < lopp2){
-    cout <<"Lopp ett är vinnaren med bättre tid!";
+    cout <<"Bästa löpparen från Lopp ett är vinnaren med bättre tid!";
     }
     else {
-    cout <<"Lopp två är vinnaren med bättre tid!";
+    cout <<"Bästa löpparen från Lopp två är vinnaren med bättre tid!";
     }
     return 0;
 }
