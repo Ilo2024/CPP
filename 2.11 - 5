@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int lopp1, lopp2;
+    int tt, mm, ss;
+    int tt2, mm2, ss2;
+
+    cout << "Mata in bästa tiden på lopp ett i formaten tt, mm, ss:" <<endl;
+    cout << "tt: ";
+    cin >> tt;
+    cout << "mm: ";
+    cin >> mm;
+    cout << "ss: ";
+    cin >> ss;
+
+    cout <<""<<endl;
+
+    cout << "Mata in bästa tiden på lopp ett i formaten tt, mm, ss:" <<endl;
+    cout << "tt: ";
+    cin >> tt2;
+    cout << "mm: ";
+    cin >> mm2;
+    cout << "ss: ";
+    cin >> ss2;
+
+    cout <<""<<endl;
+
+    cout << "Bästa löppare i lopp ett har tiden: "<< tt <<"."<< mm << "." << ss <<endl;
+    cout << "Bästa löppare i lopp två har tiden: "<< tt2 <<"."<< mm2 << "." << ss2 <<endl;
+
+    cout <<""<<endl;
+
+    lopp1 = tt * 3600 + mm * 60 + ss;
+    lopp2 = tt2 * 3600 + mm2 * 60 + ss2;
+
+    if (lopp1 < lopp2){
+    cout <<"Lopp ett är vinnaren med bättre tid!";
+    }
+    else {
+    cout <<"Lopp två är vinnaren med bättre tid!";
+    }
+    return 0;
+}
