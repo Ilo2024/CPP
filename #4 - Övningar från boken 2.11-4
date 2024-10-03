@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+float miletokm = 1.607;
+float gallontoliter = 3.785;
+
+int km;
+int liter;
+
+cout << "how much gallon do you wanna convert to liter: ";
+cin >> liter;
+cout << "how much miles do you wanna convert to km: ";
+cin >> km;
+cout << "This is how much liter that is: " << liter * gallontoliter << "liter" <<endl;
+cout << "This is how much km that is: " << km * miletokm << "km" <<endl;
+}
