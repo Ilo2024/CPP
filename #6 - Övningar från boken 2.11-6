@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int summa;
+   int betala;
+
+   cout << "Du ska betala: ";
+   cin >> summa;
+
+   cout << "Du betalade: ";
+   cin >> betala;
+
+   int pengartillbaka = betala - summa;
+
+if (pengartillbaka > 0){
+   cout << "" <<endl;
+   cout << "Här är din växel: "<< pengartillbaka <<"kr"<<endl;
+
+   int hundra = pengartillbaka / 100;
+   pengartillbaka -= hundra * 100;
+
+   int femtio = pengartillbaka / 50;
+   pengartillbaka -= femtio * 50;
+
+   int tjugo = pengartillbaka / 20;
+   pengartillbaka -= tjugo * 20;
+
+   int tio = pengartillbaka / 10;
+   pengartillbaka -= tio * 10;
+
+   int fem = pengartillbaka / 5;
+   pengartillbaka -= fem * 5;
+
+   int ett = pengartillbaka;
+
+   cout << "Du får: "<<endl;
+   cout << hundra << "st 100 lappar"<<endl;
+   cout << femtio <<"st 50 lappar"<<endl;
+   cout << tjugo <<"st 20 lappar"<<endl;
+   cout << fem <<"st 5 kronor"<<endl;
+   cout << ett <<"st 1 kronor"<<endl;
+}
+else if (pengartillbaka == 0 ) {
+   cout << "Det blir inget tillbaka, Trevlig kväll!"<<endl;
+}
+else {
+   cout << "Du har betalat för lite, var snäll och betala rätt!" <<endl;
+}
+    return 0;
+}
