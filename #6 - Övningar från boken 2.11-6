@@ -42,6 +42,8 @@ if (pengartillbaka > 0){
    cout << femtio <<"st 50 lapp/lappar"<<endl;
    if (tjugo > 0)
    cout << tjugo <<"st 20 lapp/lappar"<<endl;
+   if (tio > 0)
+   cout << tio <<"st 10 krona/kronor"<<endl;
    if (fem > 0)
    cout << fem <<"st 5 krona/kronor"<<endl;
    if (ett > 0)
