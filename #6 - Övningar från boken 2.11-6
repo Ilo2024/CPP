@@ -36,11 +36,16 @@ if (pengartillbaka > 0){
    int ett = pengartillbaka;
 
    cout << "Du får: "<<endl;
-   cout << hundra << "st 100 lappar"<<endl;
-   cout << femtio <<"st 50 lappar"<<endl;
-   cout << tjugo <<"st 20 lappar"<<endl;
-   cout << fem <<"st 5 kronor"<<endl;
-   cout << ett <<"st 1 kronor"<<endl;
+   if (hundra > 0)
+   cout << hundra << "st 100 lapp/lappar"<<endl;
+   if (femtio > 0)
+   cout << femtio <<"st 50 lapp/lappar"<<endl;
+   if (tjugo > 0)
+   cout << tjugo <<"st 20 lapp/lappar"<<endl;
+   if (fem > 0)
+   cout << fem <<"st 5 krona/kronor"<<endl;
+   if (ett > 0)
+   cout << ett <<"st 1 krona/kronor"<<endl;
 }
 else if (pengartillbaka == 0 ) {
    cout << "Det blir inget tillbaka, Trevlig kväll!"<<endl;
